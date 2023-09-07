@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images CSS</title>
+</head>
+<style>
+    .myimg1{
+        width: 400px;
+        
+        object-fit: cover;
+        background-color: aqua;
+    }
+
+    .bgimg{
+        background: url("https://images.unsplash.com/photo-1682687220063-4742bd7fd538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60");
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+    }
+</style>
+<body>
+    <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60" alt="some rajasthan picture">
+    <img class="myimg1" src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60" alt="some rajasthan picture" >
+
+    <div class="bgimg">
+        <p>hello this is bgimg</p>
+    </div>
+</body>
+</html>
