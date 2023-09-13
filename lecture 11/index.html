@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        background-color: aqua;
+        max-width: 800px;
+        min-height: 400px;
+    }
+
+    .container p{
+        background-color: red;
+        color: white;
+        font-size: 25px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        /* display: inline; */
+    }
+
+    .flexcont{
+        display: flex;
+        /* flex-direction: row; */
+        /* /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */ 
+
+        /* justify-content: center; */
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+
+
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: end; */
+        /* align-items: start; */
+        /* align-items: first baseline; */
+        /* align-items: stretch; */
+        /* align-items: last baseline; */
+        
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+
+    }
+
+    p{
+        width: 350px;
+        align-self: center;
+        align-self: stretch;
+        align-self: flex-start;
+        align-self: flex-end;
+        align-self: baseline;
+    }
+
+    p:nth-child(2)
+    {
+        color: blue;
+    }
+</style>
+<body>
+    <div class="container flexcont">
+        <p>Hey</p>
+        <p>there</p>
+        <p>how</p>
+        <p>are</p>
+        <p>you</p>
+    </div>
+    
+</body>
+</html>
