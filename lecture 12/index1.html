@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify Content</title>
+</head>
+<style>
+    /* *{
+        margin: 0;
+        padding: 0;
+    } */
+
+    .container{
+        display: grid;
+        width: 400px;
+        height: 400px;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-gap: 10px;
+        border: 1px solid black;
+
+        /* To learn justify-item property */
+        justify-items: initial;    /* this is default value*/
+        justify-items: normal;
+        justify-items: legacy;
+        justify-items: stretch;
+
+
+        /* this will align item to start */
+        justify-items: start;
+        justify-items: baseline;
+        justify-items: first baseline;
+        justify-items: flex-start;
+        justify-items: left;
+        justify-items: self-start;
+
+
+        /* this will align item at end */
+        justify-items: end;
+        justify-items: flex-end;
+        justify-items: right;
+        justify-items: last baseline;
+        justify-items: self-end;
+        
+        
+        /* this will align item to center */
+        justify-items: center;
+        justify-items: auto;
+        justify-items: safe;
+    }
+
+    .item{
+        background-color: #444;
+        color: white;
+        padding: 20px;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+</html>
