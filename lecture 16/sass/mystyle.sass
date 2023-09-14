@@ -1,0 +1,40 @@
+@import "var"
+@import "mixin"
+
+*
+ margin: 10 
+ padding: 10
+
+h1
+ color: red
+ &:hover
+  color: blue
+  display: grid
+ @media (max-width: 1200px)
+  color: green
+  
+ @media (max-width: 600px)
+  color: blue
+
+
+
+.operatorsass
+ font-size: 20px+30px
+ color: $color1
+
+.nestingouter
+ background-color: red
+
+ a
+  color: yellow
+  font-size: 30px
+
+  &::after
+   content: "hello"
+   display: inline
+   width: 100px
+   margin: 20px
+
+
+ .nestinginnerp
+  @include myprop1

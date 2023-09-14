@@ -1,0 +1,46 @@
+* {
+  margin: 10;
+  padding: 10;
+}
+
+h1 {
+  color: red;
+}
+h1:hover {
+  color: blue;
+  display: grid;
+}
+@media (max-width: 1200px) {
+  h1 {
+    color: green;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    color: blue;
+  }
+}
+
+.operatorsass {
+  font-size: 50px;
+  color: orange;
+}
+
+.nestingouter {
+  background-color: red;
+}
+.nestingouter a {
+  color: yellow;
+  font-size: 30px;
+}
+.nestingouter a::after {
+  content: "hello";
+  display: inline;
+  width: 100px;
+  margin: 20px;
+}
+.nestingouter .nestinginnerp {
+  font-size: 40px;
+  background-color: violet;
+  border: 5px solid green;
+}/*# sourceMappingURL=mystyle.css.map */
